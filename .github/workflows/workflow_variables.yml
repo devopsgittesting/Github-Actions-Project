@@ -4,15 +4,15 @@ on:
   workflow_dispatch:
 
 env:
-   coud: google-cloud
+  cloud: google-cloud
 
 jobs:
-   greeting_job:
-      runs-on: ubuntu:latest
-      env: 
-        Greeting: Hello
-      steps: 
-        - name: "Say Hello John it's Monday !"
-          run: echo "$Greeting $First_Name is using $cloud!"
-          env:
-            First_Name: Pravin
+  greeting_job:
+    runs-on: ubuntu-latest
+    env: 
+      Greeting: Hello
+    steps: 
+      - name: "Say Hello John it's Monday!"
+        run: echo "$Greeting $First_Name is using $cloud!"
+        env:
+          First_Name: Pravin
