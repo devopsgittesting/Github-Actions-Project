@@ -1,7 +1,7 @@
-name: Testing variables
+name: Testing Workflow Variables
 
 on: 
-  workflow-dispatch 
+  workflow_dispatch 
 
 env:
    coud: google-cloud
